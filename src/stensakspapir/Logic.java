@@ -2,8 +2,8 @@ package stensakspapir;
 
 public class Logic {
 
-    static int playerScore = 0;
-    static int computerScore = 0;
+    private static int playerScore = 0;
+    private static int computerScore = 0;
 
     public static void displayResult() {
         if (playerScore > computerScore) {
