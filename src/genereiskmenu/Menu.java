@@ -3,7 +3,7 @@ package genereiskmenu;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Menu {
+public class  Menu {
     Scanner in = new Scanner(System.in);
     private String menuHeader;
     private String leadText;

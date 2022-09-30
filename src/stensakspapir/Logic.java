@@ -25,18 +25,22 @@ public class Logic {
             computer.computerTurn();
 
             if (player.getChoice().equals("Saks") && computer.getChoice().equals("Papir")) {
+                System.out.println("You choose " + player.getChoice() + " and computer choose " + computer.getChoice());
                 System.out.println("Du vandt!");
                 playerScore++;
 
             } else if (player.getChoice().equals("Sten") && computer.getChoice().equals("Saks")) {
+                System.out.println("You choose " + player.getChoice() + " and computer choose " + computer.getChoice());
                 System.out.println("Du vandt!");
                playerScore++;
 
             } else if (player.getChoice().equals("Papir") && computer.getChoice().equals("Sten")) {
+                System.out.println("You choose " + player.getChoice() + " and computer choose " + computer.getChoice());
                 System.out.println("Du vandt!");
                 playerScore++;
 
             } else if (player.getChoice().equals(computer.getChoice())) {
+                System.out.println("You choose " + player.getChoice() + " and computer choose " + computer.getChoice());
                 System.out.println("Uagjort! prøv igen");
                 i--;
 
@@ -44,7 +48,6 @@ public class Logic {
                 System.out.println("Du tabte!");
                 computerScore++;
             }
-
         }
     }
 }
