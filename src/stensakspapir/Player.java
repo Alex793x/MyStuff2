@@ -7,6 +7,8 @@ import java.util.Scanner;
 public class Player {
     Scanner in = new Scanner(System.in);
     Random random = new Random();
+
+    // ATTRIBUTES
     private final String[] options = {"1: Sten", "2: Saks", "3: Papir"};
     private String choice;
 
@@ -24,23 +26,19 @@ public class Player {
         int humanChoice;
         System.out.println("Please choose a hand! \n" + Arrays.toString(options));
         humanChoice = in.nextInt();
-
-        if (humanChoice == 1) {
-            setChoice("Sten");
-        } else if (humanChoice == 2) {
-            setChoice("Saks");
-        } else if (humanChoice == 3) {
-            setChoice("Papir");
-        }
+        options(humanChoice);
     }
 
     public void computerTurn() {
         int computerChoice;
         computerChoice = random.nextInt(options.length);
+        options(computerChoice);
+    }
 
-        if (computerChoice == 1) {
+    public void options(int playerChoice) {
+        if (playerChoice == 1) {
             setChoice("Sten");
-        } else if (computerChoice == 2) {
+        } else if (playerChoice == 2) {
             setChoice("Saks");
         } else {
             setChoice("Papir");

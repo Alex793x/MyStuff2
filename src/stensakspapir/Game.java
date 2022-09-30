@@ -4,7 +4,7 @@ public class Game {
 
     public void run() {
         System.out.println("----------------------------------------");
-        System.out.println("|   Welcome to STONE, PAPER, SCISSOR   |");
+        System.out.println("|    VELKOMMEN TIL STEN, SAKS, PAPIER   |");
         System.out.println("----------------------------------------");
         Logic.play();
         Logic.displayResult();
